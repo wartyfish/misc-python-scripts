@@ -36,7 +36,7 @@ def validate_destination_path(destination_path) -> None:
         raise
 
 def main():
-    logger.info("\nVault snapshot task started")
+    logger.info("Vault snapshot task started")
     completion_message = ""
 
     target_path = Path(r"C:\Users\Eem\Dropbox\Jamies Vault")
@@ -94,13 +94,13 @@ def main():
                         zipf.write(full_path, arcname, compress_type=zipfile.ZIP_DEFLATED)
             
             logger.info("Snapshot created successfully: %s", snapshot_name)
-            completion_message = "New snapshot created"
+            completion_message = "New snapshot created\n"
         
         except Exception:
             logger.exception("Snapshot creation failed")
             notify(
                 "Vault Backup Failed",
-                "An error occured while creating the snapshot.\nCheck logs."
+                "An error occured while creating the snapshot.\nCheck logs.\n"
             )
             sys.exit(1)
 
@@ -116,7 +116,7 @@ except Exception as e:
     logger.exception("Snapshot failed; program encountered an unforeseen error")
     notify(
         "Vault Backup Failed",
-        f"Program encountered an unforeseen error:\n{e}"
+        f"Program encountered an unforeseen error:\n{e}\n"
     )
     sys.exit(1)
 
