@@ -41,9 +41,11 @@ def define_groups(my_list: list, min_group_size: int=2) -> list:
     for item in my_list:
         if item != my_list[0]:
             item_count += 1
+            
             # make sure group size exceeds threshold size
             if len(groups[groups_index]) <= min_group_size or len(my_list) - item_count <= min_group_size - 1:
                 groups[groups_index].append(item)
+
             # if allowed, each successive item has 50% change of joining group
             else:
                 if random.randrange(2) == 0:
