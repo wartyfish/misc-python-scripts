@@ -123,3 +123,72 @@ Vault snapshot task started
 2026-01-11 22:16:42 | INFO | Vault snapshot task started
 2026-01-11 22:16:42 | INFO | Snapshot interval not exceeded; no snapshot created
 2026-01-11 22:16:42 | INFO | Vault snapshot task finished
+2026-01-12 09:48:53 | INFO | Vault snapshot task started
+2026-01-12 09:48:53 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-12 09:48:53 | INFO | Vault snapshot task finished
+2026-01-13 00:00:03 | INFO | Vault snapshot task started
+2026-01-13 00:00:03 | INFO | Snapshot interval exceeded; snapshot will be created
+2026-01-13 00:00:04 | INFO | Snapshot created successfully: 260112_JamiesVaultSnapshot.zip
+2026-01-13 00:00:04 | INFO | Vault snapshot task finished
+2026-01-13 11:40:56 | INFO | Vault snapshot task started
+2026-01-13 11:40:56 | ERROR | Destination path does not exist or is not accessible
+2026-01-13 11:40:56 | ERROR | Failed while attempting to access destination path
+Traceback (most recent call last):
+  File "C:\Users\Eem\Documents\Python\misc-python-scripts\2026\Obsidian Snapshots\obsidian_snapshots.py", line 32, in validate_destination_path
+    raise FileNotFoundError(destination_path)
+FileNotFoundError: \\192.168.1.106\home\Obsidian vault backups
+2026-01-13 12:22:36 | INFO | Vault snapshot task started
+2026-01-13 12:22:36 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-13 12:22:36 | INFO | Vault snapshot task finished
+2026-01-13 12:27:23 | INFO | Vault snapshot task started
+2026-01-13 12:27:23 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-13 12:27:23 | INFO | Vault snapshot task finished
+2026-01-13 12:27:28 | INFO | Vault snapshot task started
+2026-01-13 12:27:28 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-13 12:27:28 | INFO | Vault snapshot task finished
+2026-01-13 12:52:51 | INFO | Vault snapshot task started
+2026-01-13 12:52:51 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-13 12:52:51 | INFO | Vault snapshot task finished
+2026-01-14 00:01:33 | INFO | Vault snapshot task started
+2026-01-14 00:01:33 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-14 00:01:33 | INFO | Vault snapshot task finished
+2026-01-14 09:50:16 | INFO | Vault snapshot task started
+2026-01-14 09:50:17 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-14 09:50:17 | INFO | Vault snapshot task finished
+2026-01-15 13:36:10 | INFO | Vault snapshot task started
+2026-01-15 13:36:16 | ERROR | Destination path does not exist or is not accessible
+2026-01-15 13:36:16 | ERROR | Failed while attempting to access destination path
+Traceback (most recent call last):
+  File "C:\Users\Eem\Documents\Python\misc-python-scripts\2026\Obsidian Snapshots\obsidian_snapshots.py", line 32, in validate_destination_path
+    raise FileNotFoundError(destination_path)
+FileNotFoundError: \\192.168.1.106\home\Obsidian vault backups
+2026-01-15 13:40:26 | INFO | Vault snapshot task started
+2026-01-15 13:40:33 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-15 13:40:33 | INFO | Vault snapshot task finished
+2026-01-15 16:27:27 | INFO | Vault snapshot task started
+2026-01-15 16:27:27 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-15 16:27:27 | INFO | Vault snapshot task finished
+2026-01-16 00:01:32 | INFO | Vault snapshot task started
+2026-01-16 00:01:32 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-16 00:01:32 | INFO | Vault snapshot task finished
+2026-01-16 10:41:06 | INFO | Vault snapshot task started
+2026-01-16 10:41:06 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-16 10:41:06 | INFO | Vault snapshot task finished
+2026-01-17 00:53:09 | INFO | Vault snapshot task started
+2026-01-17 00:53:10 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-17 00:53:10 | INFO | Vault snapshot task finished
+2026-01-17 00:58:50 | INFO | Vault snapshot task started
+2026-01-17 00:58:50 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-17 00:58:50 | INFO | Vault snapshot task finished
+2026-01-17 10:53:51 | INFO | Vault snapshot task started
+2026-01-17 10:53:52 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-17 10:53:52 | INFO | Vault snapshot task finished
+2026-01-19 12:59:46 | INFO | Vault snapshot task started
+2026-01-19 12:59:48 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-19 12:59:48 | INFO | Vault snapshot task finished
+2026-01-19 13:05:06 | INFO | Vault snapshot task started
+2026-01-19 13:05:06 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-19 13:05:06 | INFO | Vault snapshot task finished
+2026-01-19 17:20:03 | INFO | Vault snapshot task started
+2026-01-19 17:20:03 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-19 17:20:03 | INFO | Vault snapshot task finished
