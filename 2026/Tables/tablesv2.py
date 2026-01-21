@@ -119,16 +119,13 @@ class TableRenderer():
             y_offset += lines_per_row[y-1] - 1              # Account for wrap-around lines
 
     def print_bottom_border(self, x_offset: int=0, y_offset: int=0):
-        col_widths      = self.get_column_widths()
-        col_offsets     = list(accumulate((col + 3 for col in self.get_column_widths()), initial=0))
+        column_widths = self.get_column_widths()
+        bext.goto(x_offset, y_offset)
 
-        for x in range(len(col_offsets) - 1):
-            bext.goto(x_offset + col_offsets[x], y_offset)
-            print("└", end="")
-            print("─"*col_widths[x], end="")
-        bext.goto(x_offset + col_offsets[-1], y_offset)
+        print("└", end="")
+        print("─"*(sum(column_widths) + len(column_widths)*3 - 1), end="")
         print("┘")
-
+ 
         
 
         
