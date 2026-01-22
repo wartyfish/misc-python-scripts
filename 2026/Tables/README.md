@@ -1,4 +1,4 @@
-Table TUI v2
+Table TUI v3
 
 Interactive, terminal-based table viewer that allows the user to
 navigate the table with the arrow keys.
@@ -14,8 +14,11 @@ Structure:
     - Handles any future data manipulation (sorting, editing, filtering)
 
 2. View (TableRenderer)
-    - Renders the table to the terminal
-    - Computes column withds for proper alignment
+    - Renders the table to the terminal at specified coordinates and with specified width (22/1/26, v3)
+    - Computes column widths to fill the specified width such that:
+        - text-wrapping is minimized 
+        - wider columns remain wider than narrower ones
+        - available width is distributing using a water-filling algorithm (22/1/26, v3)
     - Highlights the currently selected cell
     - Stateless: does not modify data or cursor state
 
