@@ -246,17 +246,17 @@ def main():
     window_height       = bext.height()
 
     log_sheet           = TableData(log_data)
-    log_sheet_scribe    = TableRenderer(log_sheet, max_table_width= int(window_width // 2 - 2))
+    log_sheet_scribe    = TableRenderer(log_sheet, max_table_width= int(window_width // 4 - 2))
 
     stats_sheet         = TableData(stats_data)
-    stats_sheet_scribe  = TableRenderer(stats_sheet, max_table_width= int(window_width // 2 - 2))
+    stats_sheet_scribe  = TableRenderer(stats_sheet, max_table_width= int(window_width // 4 - 2))
 
 
     os.system("cls")
 
 
     log_sheet_scribe.print_table(0, 0)
-    stats_sheet_scribe.print_table(int(window_width // 2), 0)
+    stats_sheet_scribe.print_table(int(window_width // 4) + 10, 0)
 
 
 
@@ -270,8 +270,11 @@ if __name__ == "__main__":
 #   - Seperate row types seperately into individual methods ✓
 #   - Calculate absolute positions once: calculate x-offsets per col *before* drawing ✓
 #   - Compute y-offset once per row ✓
+#   - Investigate rich module 
 # - Text wrapping ✓
 #   - Optimise col widths to minimize text wrapping ✓
+#   - Allow user to specify header height 
+#  
 
 
 # Useful UTF-8 box-drawing characters:
