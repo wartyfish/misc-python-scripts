@@ -222,3 +222,19 @@ Traceback (most recent call last):
   File "C:\Users\Eem\Documents\Python\misc-python-scripts\2026\Obsidian Snapshots\obsidian_snapshots.py", line 32, in validate_destination_path
     raise FileNotFoundError(destination_path)
 FileNotFoundError: \\192.168.1.106\home\Obsidian vault backups
+2026-01-23 10:27:25 | INFO | Vault snapshot task started
+2026-01-23 10:27:25 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-23 10:27:25 | INFO | Vault snapshot task finished
+2026-01-23 21:02:19 | INFO | Vault snapshot task started
+2026-01-23 21:02:52 | ERROR | Destination path does not exist or is not accessible
+2026-01-23 21:02:52 | ERROR | Failed while attempting to access destination path
+Traceback (most recent call last):
+  File "C:\Users\Eem\Documents\Python\misc-python-scripts\2026\Obsidian Snapshots\obsidian_snapshots.py", line 32, in validate_destination_path
+    raise FileNotFoundError(destination_path)
+FileNotFoundError: \\192.168.1.106\home\Obsidian vault backups
+2026-01-24 11:24:37 | INFO | Vault snapshot task started
+2026-01-24 11:24:37 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-24 11:24:37 | INFO | Vault snapshot task finished
+2026-01-24 11:30:15 | INFO | Vault snapshot task started
+2026-01-24 11:30:15 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-01-24 11:30:15 | INFO | Vault snapshot task finished
