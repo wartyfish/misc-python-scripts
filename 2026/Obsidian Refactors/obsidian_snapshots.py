@@ -40,7 +40,7 @@ def main():
     completion_message = ""
 
     target_path = Path(r"C:\Users\Eem\Dropbox\Jamies Vault")
-    destination_path = Path(r"\\192.168.1.106\home\Obsidian vault backups")
+    destination_path = Path(r"\\192.168.1.107\home\Obsidian vault backups")
     create_snapshot = False
 
     try:
