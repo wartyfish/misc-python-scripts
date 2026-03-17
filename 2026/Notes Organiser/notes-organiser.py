@@ -5,37 +5,51 @@ import shutil
 import time
 from pathlib import Path
 
-
-with open("tag_folders.json", encoding="utf-8") as f:
-    data = json.load(f)
-
-tag_map = data["tags"]
-ignore = set(data["ignore"])
-
-# TODO sift through each note
-SOURCE = Path(r"C:\Users\Eem\Dropbox\Accounting Notes")
-
-
 PATTERN = re.compile(r"---\ntype:\s(\w+)\n")
 
 
-for dirpath, subdirs, files in os.walk(SOURCE):
-    for filename in files:
-        if filename.endswith(".md"):
-            file = os.path.join(dirpath, filename)
-            with open(file, encoding="utf-8") as f:
+
+def process_notes(source: Path, tag_map: dict, ignore: set):
+    """Scan markdown files and move them if needed."""
+    for dirpath, subdirs, files in os.walk(SOURCE):
+        for filename in files:
+            if not filename.endswith(".md"):
+                continue
+
+            file_path = Path(dirpath) / filename
+
+            with open(file_path, encoding="utf-8") as f:
                 content = f.read()
 
-            if match := PATTERN.match(content):
-                tag = match.group(1)
-                basename = os.path.basename(dirpath)
+            match = PATTERN.match(content)
+            if not match:
+                continue
 
-                # check if file is located in the correct dir
-                if tag not in ignore:
-                    if tag_map[tag] != basename and basename != "99 Templates":
-                        shutil.move(file, SOURCE / basename)
-                        print(f"{file} → {repr(SOURCE / tag_map[tag])}")
+            tag = match.group(1)
+            basename = Path(dirpath).name
+
+            if tag in ignore:
+                continue
+
+            target_folder = source / tag_map.get(tag, basename)
+
+            if basename != "99 Templates" and basename != target_folder.name:
+                target_path = target_folder / filename
+                target_folder.mkdir(parents = True, exist_ok=True)
+
+                shutil.move(str(file_path), str(target_path))
+                print(f"{file_path.name} → {target_path.relative_to(SOURCE.parent)}")
+
 
 
 # TODO: scan in background, move new files if they need moving. 
+if __name__ == "__main__":
+    with open("tag_folders.json", encoding="utf-8") as f:
+        data = json.load(f)
 
+    tag_map = data["tags"]
+    ignore = set(data["ignore"])
+
+    SOURCE = Path(r"C:\Users\Eem\Dropbox\Accounting Notes")
+
+    process_notes(SOURCE, tag_map, ignore)
