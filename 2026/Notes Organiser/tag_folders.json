@@ -1,0 +1,12 @@
+{
+    "tags": {
+        "module": "01 Modules",
+        "concept": "02 Concepts",
+        "structure": "02 Concepts",
+        "example": "03 Examples",
+        "practice": "04 Practice",
+        "reference": "05 Reference",
+        "formula": "06 Formula"
+    },
+    "ignore": ["definition", "note"]
+}
