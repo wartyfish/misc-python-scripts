@@ -73,7 +73,6 @@ def watch_folder(source: Path, tag_map: dict, ignore: set, interval=1, cooldown=
         current_mtime = get_latest_mtime(source)
 
         if current_mtime != last_mtime:
-            print("Changes detected, processing...")
             process_notes(source, tag_map, ignore)
             last_mtime = current_mtime
 
@@ -86,4 +85,7 @@ if __name__ == "__main__":
 
     SOURCE = Path(r"C:\Users\Eem\Dropbox\Accounting Notes")
 
-    watch_folder(SOURCE, tag_map, ignore)
+    try:
+        watch_folder(SOURCE, tag_map, ignore)
+    except KeyboardInterrupt:
+        pass

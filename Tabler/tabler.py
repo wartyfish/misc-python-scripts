@@ -18,6 +18,10 @@ Behaviour:
 
 Halt program with Ctrl-C
 """
+# TODO: 
+# - Add optional user input to put negative numbers in parenthesis
+# - Stop stripping bold text
+# - Right justify numbers
 
 import  pyperclip, time, threading
 

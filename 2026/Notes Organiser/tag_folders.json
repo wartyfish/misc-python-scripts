@@ -6,7 +6,7 @@
         "example": "03 Examples",
         "practice": "04 Practice",
         "reference": "05 Reference",
-        "formula": "06 Formula"
+        "formula": "02 Concepts"
     },
     "ignore": ["definition", "note"]
 }
