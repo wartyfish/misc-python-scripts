@@ -77,7 +77,7 @@ def watch_folder(source: Path, tag_map: dict, ignore: set, interval=1, cooldown=
             last_mtime = current_mtime
 
 if __name__ == "__main__":
-    with open("tag_folders.json", encoding="utf-8") as f:
+    with open(Path(r"C:\Users\Eem\Documents\Python\misc-python-scripts\2026\Obsidian scripts\Notes Organiser\tag_folders.json"), encoding="utf-8") as f:
         data = json.load(f)
 
     tag_map = data["tags"]
@@ -85,6 +85,7 @@ if __name__ == "__main__":
 
     SOURCE = Path(r"C:\Users\Eem\Dropbox\Accounting Notes")
 
+    print(f"Watching {SOURCE}...")
     try:
         watch_folder(SOURCE, tag_map, ignore)
     except KeyboardInterrupt:
