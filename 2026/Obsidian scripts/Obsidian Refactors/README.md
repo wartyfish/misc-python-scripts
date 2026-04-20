@@ -1,6 +1,11 @@
 ## Obsidian Snapshot Generator
 A simple script that compresses obsidian vault back ups to NAS as ZIP files every week.
 
+## Devlog
+
+### 20/04/26
+Script now copies new images to a seperate repo to avoid unecessary folder bloat.
+
 ## Potential additions to the script:
 - Add a log file to track:
 	- When the script runs

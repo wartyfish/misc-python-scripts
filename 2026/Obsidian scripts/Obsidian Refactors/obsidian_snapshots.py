@@ -1,4 +1,4 @@
-import os, zipfile, re, logging, sys
+import os, zipfile, re, logging, sys, shutil
 from pathlib import Path
 from datetime import datetime, timedelta
 from winotify import Notification, audio
@@ -35,13 +35,24 @@ def validate_destination_path(destination_path) -> None:
         logger.exception("Failed while attempting to access destination path")
         raise
 
+def copy_if_new(file_path: Path, image_repo_dir: Path) -> None:
+    destination = image_repo_dir / file_path.name
+
+    if destination.exists():
+        return None
+    else:
+        shutil.copy(file_path, image_repo_dir)
+
 def main():
     logger.info("Vault snapshot task started")
     completion_message = ""
 
     target_path = Path(r"C:\Users\Eem\Dropbox\Jamies Vault")
-    destination_path = Path(r"\\192.168.1.107\home\Obsidian vault backups")
+    destination_path = Path(r"\\192.168.1.106\home\Obsidian vault backups")
     create_snapshot = False
+
+    IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.pdf'}             # image extensions to be treated seperately
+    image_repo = Path(r"\\192.168.1.106\home\Obsidian vault backups\_Vault Image Repo") # image repo 
 
     try:
         validate_destination_path(destination_path)
@@ -91,7 +102,13 @@ def main():
                     for file in files:
                         full_path = Path(root) / file
                         arcname = full_path.relative_to(target_path)
-                        zipf.write(full_path, arcname, compress_type=zipfile.ZIP_DEFLATED)
+
+                        # write non-image files
+                        if full_path.suffix.lower() not in IMAGE_EXTS:
+                            zipf.write(full_path, arcname, compress_type=zipfile.ZIP_DEFLATED)
+                        
+                        else:
+                            copy_if_new(full_path, image_repo)
             
             logger.info("Snapshot created successfully: %s", snapshot_name)
             completion_message = "New snapshot created\n"
