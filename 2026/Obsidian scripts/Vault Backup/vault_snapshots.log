@@ -577,3 +577,113 @@ FileNotFoundError: \\192.168.1.107\home\Obsidian vault backups
 2026-04-20 13:43:59 | INFO | Snapshot interval exceeded; snapshot will be created
 2026-04-20 13:44:00 | INFO | Snapshot created successfully: 260419_JamiesVaultSnapshot.zip
 2026-04-20 13:44:00 | INFO | Vault snapshot task finished
+2026-04-20 13:52:59 | INFO | Vault snapshot task started
+2026-04-20 13:52:59 | INFO | Snapshot interval exceeded; snapshot will be created
+2026-04-20 13:52:59 | INFO | Snapshot created successfully: 260419_JamiesVaultSnapshot.zip
+2026-04-20 13:52:59 | INFO | Vault snapshot task finished
+2026-04-20 14:19:55 | INFO | Vault snapshot task started
+2026-04-20 14:19:55 | INFO | Snapshot interval exceeded; snapshot will be created
+2026-04-20 14:19:55 | INFO | Snapshot created successfully: 260419_JamiesVaultSnapshot.zip
+2026-04-20 14:19:55 | INFO | Vault snapshot task finished
+2026-04-20 14:20:39 | INFO | Vault snapshot task started
+2026-04-20 14:20:39 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-20 14:20:39 | INFO | Vault snapshot task finished
+2026-04-21 11:25:51 | INFO | Vault snapshot task started
+2026-04-21 11:25:52 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-21 11:25:52 | INFO | Vault snapshot task finished
+2026-04-22 08:20:13 | INFO | Vault snapshot task started
+2026-04-22 08:20:13 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-22 08:20:13 | INFO | Vault snapshot task finished
+2026-04-22 08:25:51 | INFO | Vault snapshot task started
+2026-04-22 08:25:51 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-22 08:25:51 | INFO | Vault snapshot task finished
+2026-04-23 09:24:01 | INFO | Vault snapshot task started
+2026-04-23 09:24:03 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-23 09:24:03 | INFO | Vault snapshot task finished
+2026-04-24 09:22:32 | INFO | Vault snapshot task started
+2026-04-24 09:22:32 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-24 09:22:32 | INFO | Vault snapshot task finished
+2026-04-24 09:28:08 | INFO | Vault snapshot task started
+2026-04-24 09:28:08 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-24 09:28:08 | INFO | Vault snapshot task finished
+2026-04-24 21:32:25 | INFO | Vault snapshot task started
+2026-04-24 21:32:25 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-24 21:32:25 | INFO | Vault snapshot task finished
+2026-04-25 09:48:40 | INFO | Vault snapshot task started
+2026-04-25 09:48:40 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-25 09:48:40 | INFO | Vault snapshot task finished
+2026-04-25 09:54:19 | INFO | Vault snapshot task started
+2026-04-25 09:54:19 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-25 09:54:19 | INFO | Vault snapshot task finished
+2026-04-25 15:46:19 | INFO | Vault snapshot task started
+2026-04-25 15:46:19 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-25 15:46:19 | INFO | Vault snapshot task finished
+2026-04-26 18:12:02 | INFO | Vault snapshot task started
+2026-04-26 18:12:03 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-26 18:12:03 | INFO | Vault snapshot task finished
+2026-04-26 18:17:42 | INFO | Vault snapshot task started
+2026-04-26 18:17:42 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-26 18:17:42 | INFO | Vault snapshot task finished
+2026-04-27 10:17:57 | INFO | Vault snapshot task started
+2026-04-27 10:17:57 | INFO | Snapshot interval exceeded; snapshot will be created
+2026-04-27 10:17:59 | INFO | Snapshot created successfully: 260426_JamiesVaultSnapshot.zip
+2026-04-27 10:17:59 | INFO | Vault snapshot task finished
+2026-04-28 12:41:19 | INFO | Vault snapshot task started
+2026-04-28 12:41:20 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-28 12:41:20 | INFO | Vault snapshot task finished
+2026-04-28 12:46:59 | INFO | Vault snapshot task started
+2026-04-28 12:46:59 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-28 12:46:59 | INFO | Vault snapshot task finished
+2026-04-29 09:44:23 | INFO | Vault snapshot task started
+2026-04-29 09:44:24 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-29 09:44:24 | INFO | Vault snapshot task finished
+2026-04-29 09:50:01 | INFO | Vault snapshot task started
+2026-04-29 09:50:01 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-29 09:50:01 | INFO | Vault snapshot task finished
+2026-04-30 12:46:35 | INFO | Vault snapshot task started
+2026-04-30 12:46:35 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-04-30 12:46:35 | INFO | Vault snapshot task finished
+2026-04-30 23:45:17 | INFO | Vault snapshot task started
+2026-04-30 23:45:49 | ERROR | Destination path does not exist or is not accessible
+2026-04-30 23:45:49 | ERROR | Failed while attempting to access destination path
+Traceback (most recent call last):
+  File "C:\Users\Eem\Documents\Python\misc-python-scripts\2026\Obsidian scripts\Vault Backup\obsidian_snapshots.py", line 32, in validate_destination_path
+    raise FileNotFoundError(destination_path)
+FileNotFoundError: \\192.168.1.106\home\Obsidian vault backups
+2026-05-01 09:41:41 | INFO | Vault snapshot task started
+2026-05-01 09:41:42 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-01 09:41:42 | INFO | Vault snapshot task finished
+2026-05-01 09:47:20 | INFO | Vault snapshot task started
+2026-05-01 09:47:20 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-01 09:47:20 | INFO | Vault snapshot task finished
+2026-05-01 23:20:44 | INFO | Vault snapshot task started
+2026-05-01 23:20:44 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-01 23:20:44 | INFO | Vault snapshot task finished
+2026-05-02 10:27:31 | INFO | Vault snapshot task started
+2026-05-02 10:27:31 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-02 10:27:31 | INFO | Vault snapshot task finished
+2026-05-02 10:33:08 | INFO | Vault snapshot task started
+2026-05-02 10:33:08 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-02 10:33:08 | INFO | Vault snapshot task finished
+2026-05-05 11:56:14 | INFO | Vault snapshot task started
+2026-05-05 11:56:14 | INFO | Snapshot interval exceeded; snapshot will be created
+2026-05-05 11:56:17 | INFO | Snapshot created successfully: 260504_JamiesVaultSnapshot.zip
+2026-05-05 11:56:17 | INFO | Vault snapshot task finished
+2026-05-05 15:07:47 | INFO | Vault snapshot task started
+2026-05-05 15:07:47 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-05 15:07:47 | INFO | Vault snapshot task finished
+2026-05-06 12:37:10 | INFO | Vault snapshot task started
+2026-05-06 12:37:10 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-06 12:37:10 | INFO | Vault snapshot task finished
+2026-05-06 12:42:33 | INFO | Vault snapshot task started
+2026-05-06 12:42:33 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-06 12:42:33 | INFO | Vault snapshot task finished
+2026-05-07 11:08:31 | INFO | Vault snapshot task started
+2026-05-07 11:08:31 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-07 11:08:31 | INFO | Vault snapshot task finished
+2026-05-07 11:14:02 | INFO | Vault snapshot task started
+2026-05-07 11:14:02 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-07 11:14:02 | INFO | Vault snapshot task finished
+2026-05-08 08:31:33 | INFO | Vault snapshot task started
+2026-05-08 08:31:33 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-08 08:31:33 | INFO | Vault snapshot task finished
