@@ -20,7 +20,7 @@ def build_image_gallery(repo: Path, index: Path, image_width: int=150) -> None:
         f.write("# Tie Dye Inspo Gallery\n")
         f.write("\n".join(lines))
         f.write("\n")
-        f.write("***")
+        f.write("***\n")
         f.write("[[Dashboard]] | [[Tie Dye Dashboard]]")
         print("Tie Dye Inspo note updated.")
 
