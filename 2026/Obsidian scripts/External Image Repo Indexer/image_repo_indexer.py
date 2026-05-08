@@ -9,10 +9,10 @@ def build_image_gallery(repo: Path, index: Path, image_width: int=150) -> None:
     
     lines = []
     for file in images:
-        file_formatted = f'file:///{str(file).replace(chr(92), "/")}'
+        file_formatted = f'file:///{str(file).replace(chr(92), "/").replace(" ", "%20")}'
         image_link = f"[{file.name}]({file_formatted})"
         lines.append(image_link)
-        lines.append(f'<figure><img src={file_formatted} width="{image_width}"></figure>')
+        lines.append(f'<figure><img src="{file_formatted}" width="{image_width}"></figure>')
 
 
 
