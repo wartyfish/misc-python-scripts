@@ -9,10 +9,12 @@ thumbs = Path(r"C:\Users\Eem\Desktop\pdf sandbox\dyes")
 
 
 dyes = [
-    "Raven",
-    "Shiitake",
-    "Timber wolf",
-    "Black Cherry"
+    "Rustic Brown",
+    "Terracotta",
+    "Palomino",
+    "Sage",
+    "Wedgewood",
+    "Shiitake"
 ]
 
 
@@ -32,7 +34,7 @@ filepaths = sorted(
 
 
 # settings
-grid_size = (2, 2)
+grid_size = (3, 2)
 spacing = 5 # px
 thumb_size = (300, 300)
 

@@ -116,8 +116,8 @@ if __name__ == "__main__":
     TIEDYE_PROJECT_IMAGES_REPO = Path(r"P:\Photos\Tie Dye")
     TIEDYE_NOTE_PATH = Path(r"C:\Users\Eem\Dropbox\Jamies Vault\03 Projects\Tie Dye\Project Images.md")
     TIEDYE_THUMBNAIL_WIDTH = 500
-    INSPO_REPO = Path(r"P:\Obsidian vault backups\_Vault Image Repo\Tie Dye Inspo Images")
-    INSPO_NOTE_PATH = Path(r"C:\Users\Eem\Dropbox\Jamies Vault\03 Projects\Tie Dye\Image Index.md")
+    INSPO_REPO = Path(r"P:\Obsidian vault backups\_Vault Image Repo\Tie Dye Inspo")
+    INSPO_NOTE_PATH = Path(r"C:\Users\Eem\Dropbox\Jamies Vault\03 Projects\Tie Dye\Tie Dye Inspo Images.md")
     INSPO_THUMNAIL_WIDTH = 500
     MAP_NOTE_PATH = VAULT_PATH / "02 Docs" / "Note Folder Map.md"
 
@@ -142,7 +142,7 @@ if __name__ == "__main__":
         }
     ]
 
-    process_notes(VAULT_PATH, type_map, inbox)    
+    process_notes(VAULT_PATH, type_map, inbox) 
 
     print(f"Watching {VAULT_PATH} and {INSPO_REPO}...")
     try:

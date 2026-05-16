@@ -687,3 +687,39 @@ FileNotFoundError: \\192.168.1.106\home\Obsidian vault backups
 2026-05-08 08:31:33 | INFO | Vault snapshot task started
 2026-05-08 08:31:33 | INFO | Snapshot interval not exceeded; no snapshot created
 2026-05-08 08:31:33 | INFO | Vault snapshot task finished
+2026-05-08 21:05:22 | INFO | Vault snapshot task started
+2026-05-08 21:05:23 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-08 21:05:23 | INFO | Vault snapshot task finished
+2026-05-09 08:13:28 | INFO | Vault snapshot task started
+2026-05-09 08:13:28 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-09 08:13:28 | INFO | Vault snapshot task finished
+2026-05-13 09:17:44 | INFO | Vault snapshot task started
+2026-05-13 09:17:45 | INFO | Snapshot interval exceeded; snapshot will be created
+2026-05-13 09:17:45 | ERROR | Snapshot creation failed
+Traceback (most recent call last):
+  File "C:\Users\Eem\Documents\Python\misc-python-scripts\2026\Obsidian scripts\Vault Backup\obsidian_snapshots.py", line 108, in main
+    zipf.write(full_path, arcname, compress_type=zipfile.ZIP_DEFLATED)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eem\AppData\Local\Programs\Python\Python313\Lib\zipfile\__init__.py", line 1908, in write
+    shutil.copyfileobj(src, dest, 1024*8)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eem\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 203, in copyfileobj
+    while buf := fsrc_read(length):
+                 ~~~~~~~~~^^^^^^^^
+OSError: [Errno 22] Invalid argument
+2026-05-13 10:17:53 | INFO | Vault snapshot task started
+2026-05-13 10:18:26 | ERROR | Destination path does not exist or is not accessible
+2026-05-13 10:18:26 | ERROR | Failed while attempting to access destination path
+Traceback (most recent call last):
+  File "C:\Users\Eem\Documents\Python\misc-python-scripts\2026\Obsidian scripts\Vault Backup\obsidian_snapshots.py", line 32, in validate_destination_path
+    raise FileNotFoundError(destination_path)
+FileNotFoundError: \\192.168.1.106\home\Obsidian vault backups
+2026-05-14 09:13:38 | INFO | Vault snapshot task started
+2026-05-14 09:13:38 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-14 09:13:38 | INFO | Vault snapshot task finished
+2026-05-15 00:01:34 | INFO | Vault snapshot task started
+2026-05-15 00:01:34 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-15 00:01:34 | INFO | Vault snapshot task finished
+2026-05-15 09:18:11 | INFO | Vault snapshot task started
+2026-05-15 09:18:11 | INFO | Snapshot interval not exceeded; no snapshot created
+2026-05-15 09:18:11 | INFO | Vault snapshot task finished
